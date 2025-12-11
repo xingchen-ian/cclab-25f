@@ -147,9 +147,11 @@ function drawLights() {
 function drawInstructionalText(){
   push();
   fill(150);
-  text("press 'A' to generate DANCER", 100, 100);
+  text("press 'A' to invite DANCER", 100, 100);
   text("press 'L' to SHINE", 100, 120);
   text("press 'S' to make MOOD", 100, 140);
+  text("press 'D' to kick DANCERS out", 100, 160);
+
   pop();
 }
 
