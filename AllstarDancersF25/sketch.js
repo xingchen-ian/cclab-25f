@@ -10,7 +10,7 @@ console.log("[l]: switches on strobe light")
 //  sketch.)
 
 // Add the name of all dancer classes in here:
-let dancerClasses = [AimeeDancer, AmeliaDancer, AngelinaDancer, AnjiDancer, CynthiaDancer, MarleneDancer, MikeDancer, NiniDancer, SabrinaDancer, StephenDancer, QinDancer, XinyanHuangDancer, Tapper, NickDancer, AlyxDancer, Stickman, BadbadtzSarah, LeiaDancer, Shae];
+let dancerClasses = [AimeeDancer, AmeliaDancer, AngelinaDancer, AnjiDancer, CynthiaDancer, MarleneDancer, MikeDancer, NiniDancer, SabrinaDancer, StephenDancer, QinDancer, XinyanHuangDancer, Tapper, NickDancer, AlyxDancer, Stickman, BadbadtzSarah, LeiaDancer, Shae, Misheel, Stanley, EyeDancer, OldMan, kirby, AAA, Chau, dancingjohn, VioletTorch, Jellyfish, BunBun, PumpkinMan, TowakoDancer, sydneyDancer, AustinDancer, ChristinaDancer, AngelinaaDancer, AnnaDancer, HuySkibidiDancer, RyanDancer];
 
 
 let dancers = [];
@@ -41,6 +41,7 @@ function draw() {
   drawDiscoBall();
   drawLights();
   drawSmoke();
+  drawInstructionalText();
 
   if (keyIsPressed) {
     if (key == 's') {  // smoke machine
@@ -140,6 +141,15 @@ function drawLights() {
     fill(255, 127);
     rect(0, 0, width, height);
   }
+  pop();
+}
+
+function drawInstructionalText(){
+  push();
+  fill(150);
+  text("press 'A' to generate DANCER", 100, 100);
+  text("press 'L' to SHINE", 100, 120);
+  text("press 'S' to make MOOD", 100, 140);
   pop();
 }
 
